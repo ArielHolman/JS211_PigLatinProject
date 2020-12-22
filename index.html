@@ -2,16 +2,19 @@
 <html>
 <head>
 <meta charset="utf-8">
+<link rel="stylesheet" href="index.css"></link>
 <title>Pig Latin</title>
 </head>
 <body>
-    <h1>Let's do Pig Latin Stuff!</h1>
-<hr/>
-  <div id="display-element"></div>
-  <input type="text" id="stringInput" value="" placeholder="Type a word!" oninput="storeString(this.value)"></input>
-  <button onclick="pigLatin()">get piggy!</button>
-  <div id="results"></div>
-  <hr/>
+    <h3>So you want to speak Pig Latin, ay!</h3>
+  <main>
+    <div id="display-element"></div>
+    <div id="image-containter">
+      <p id="pigLatinResult"></p>
+    </div>
+    <input type="text" id="stringInput" value="" placeholder="Type a word!" oninput="storeString(this.value)"></input>
+    <button onclick="pigLatin()">Get piggy!</button>
+  </main>
   <script src="DOM.js"></script>
 </body>
 </html>
