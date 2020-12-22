@@ -5,12 +5,16 @@ const storeString = (valA) => {
 }
 
 const displayTranslation = (translatedWord) => {
-    var newDiv = document.createElement("P");
-    newDiv.innerText = (translatedWord);
-    document.body.appendChild(newDiv);
-  
-  // document.getElementById("results").innerHTML = translatedWord;
+  var newDiv = document.createElement("P");
+  newDiv.innerText = (translatedWord);
+  newDiv.id = "pigLatinResult";
+  document.body.appendChild(newDiv);
+
+  let previousWord = document.getElementById("pigLatinResult");
+  let parentDiv = previousWord.parentNode;
+  parentDiv.replaceChild(newDiv, previousWord);
 }
+
 
 const pigLatin = () => {
   let vowels = ['a', 'e', 'i', 'o', 'u'];
