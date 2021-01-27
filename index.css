@@ -1,37 +1,62 @@
-body{
+main{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #92B5B6;
+}
+
+h3{
+  font-family: 'Exo 2', sans-serif;
+  font-size: 2.5rem;
+  margin: 1%;
 }
 
 #image-containter {
-  background: url("https://images.unsplash.com/photo-1587007451401-78a60676f4b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1275&q=80");
-  height: 800px;
-  width: 600px;
+  background: url("https://images.unsplash.com/photo-1550867049-20a00164c925?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1867&q=80");
+  height: 20rem;
+  width: 32rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding: 1rem;
 }
 
-#pigLatinResult{
-  border: 2px black solid;
-  border-radius: 50%;
-  margin: 1rem 8rem;
-  padding: 2rem;
+#textContainer {
+  display: flex;
+  justify-content: center;
+}
+
+textarea{
+  width: 17rem;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 3px solid rgba(170, 169, 169, 0.671);
+  border-radius: 4px;
+  background-color: #f8f8f8ea;
+  font-size: 21px;
+  resize: none;
   text-align: center;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
+  margin: 1rem 0;
+  font-family: 'Exo 2', sans-serif;
 }
 
-#pigLatinResult:hover {
-  overflow: visible;
+#pigTalk{
+  font-weight: bolder;
+  border-radius:90%;
+  margin-left: 15rem;
+  padding: 1rem;
+  text-align: right;
+  font-family: 'Hachi Maru Pop', cursive;
 }
 
-#stringInput {
-  margin: 1rem;
-  font-size: 25px;
+button{
+background-color: rgba(0, 0, 0, 0.705);
+color: #ccc;
+font-size: 35px;
+border-radius: 10%;
+padding: 1rem;
+margin: 1%;
+font-family: 'Exo 2', sans-serif;
 }
-

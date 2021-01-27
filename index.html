@@ -3,16 +3,21 @@
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" href="index.css"></link>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500&family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
 <title>Pig Latin</title>
 </head>
 <body>
-    <h3>So you want to speak Pig Latin, ay!</h3>
   <main>
+    <h3>Pig Latin Generator</h3>
     <div id="display-element"></div>
     <div id="image-containter">
-      <p id="pigLatinResult"></p>
+      <p id="pigTalk">So you want to speak Pig Latin, Ay!</p>
     </div>
-    <input type="text" id="stringInput" value="" placeholder="Type a word!" oninput="storeString(this.value)"></input>
+    <div id="textContainer">
+      <textarea id="stringInput" value="" placeholder="Type a word!" oninput="storeString(this.value)"></textarea>
+      <textarea id="pigLatinResult" placeholder="Pig Latin Translation here!"></textarea>
+    </div>
     <button onclick="pigLatin()">Get piggy!</button>
   </main>
   <script src="DOM.js"></script>

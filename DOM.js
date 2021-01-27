@@ -5,10 +5,8 @@ const storeString = (valA) => {
 }
 
 const displayTranslation = (translatedWord) => {
-  var newDiv = document.createElement("P");
+  var newDiv = document.getElementById("pigLatinResult");
   newDiv.innerText = (translatedWord);
-  newDiv.id = "pigLatinResult";
-  document.body.appendChild(newDiv);
 
   let previousWord = document.getElementById("pigLatinResult");
   let parentDiv = previousWord.parentNode;
@@ -21,7 +19,7 @@ const pigLatin = () => {
   let finalWord = "";
   let cleanWord = value.toLowerCase().trim()
   if (vowels.indexOf(cleanWord[0]) > -1) {
-    finalWord = cleanWord + "yay";
+    finalWord = cleanWord + "way";
     return displayTranslation(finalWord)
   } else {
     let firstMatch = cleanWord.match(/[aeiou]/g) || 0;
