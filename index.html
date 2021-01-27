@@ -15,10 +15,13 @@
       <p id="pigTalk">So you want to speak Pig Latin, Ay!</p>
     </div>
     <div id="textContainer">
-      <textarea id="stringInput" value="" placeholder="Type a word!" oninput="storeString(this.value)"></textarea>
+      <textarea id="stringInput" value="" placeholder="Start typing here..." oninput="storeString(this.value)"></textarea>
       <textarea id="pigLatinResult" placeholder="Pig Latin Translation here!"></textarea>
     </div>
-    <button onclick="pigLatin()">Get piggy!</button>
+    <div id="buttonContainer">
+      <button class= "clearBtn" onclick="clearData()">Clear!</button>
+      <button class= "piggyBtn" onclick="splitString()">Get piggy!</button>
+    </div>
   </main>
   <script src="DOM.js"></script>
 </body>

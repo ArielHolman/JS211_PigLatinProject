@@ -12,7 +12,7 @@ const pigLatin = (word) => {
   let finalWord = "";
   let cleanWord = word.toLowerCase().trim();
   if (vowels.indexOf(cleanWord[0]) > -1) {
-    finalWord = cleanWord + "yay";
+    finalWord = cleanWord + "way";
     return finalWord;
   } else {
     let firstMatch = cleanWord.match(/[aeiou]/g) || 0;
