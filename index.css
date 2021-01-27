@@ -4,6 +4,8 @@ main{
   justify-content: center;
   align-items: center;
   background-color: #92B5B6;
+  height: 100%;
+  width: 100%;
 }
 
 h3{
