@@ -1,3 +1,5 @@
+// unit test below
+
 "use strict";
 
 const assert = require("assert");
@@ -43,9 +45,9 @@ if (typeof describe === "function") {
       assert.equal(pigLatin("create"), "eatecray");
       assert.equal(pigLatin("valley"), "alleyvay");
     });
-    it('should attach "yay" if word begins with vowel', () => {
-      assert.equal(pigLatin("egg"), "eggyay");
-      assert.equal(pigLatin("emission"), "emissionyay");
+    it('should attach "way" if word begins with vowel', () => {
+      assert.equal(pigLatin("egg"), "eggway");
+      assert.equal(pigLatin("emission"), "emissionway");
     });
     it("should lowercase and trim word before translation", () => {
       assert.equal(pigLatin("HeLlO "), "ellohay");

@@ -2,16 +2,19 @@ let value = "";
 let pigLatinResult = document.getElementById("pigLatinResult");
 let englishString = document.getElementById("stringInput");
 
+//trims value put into the text area
 const storeString = (valA) => {
   value = valA.trim();
 };
 
+//clear the data in both text areas
 const clearData = () => {
   let clearInput = (englishString.value = "");
   let clearResult = (pigLatinResult.value = "");
   return clearInput, clearResult;
 };
 
+//translate english text and display in pig latin result then replace if new word exists
 const displayTranslation = (translatedWord) => {
   let newDiv = pigLatinResult;
   newDiv.value = translatedWord;
@@ -21,6 +24,7 @@ const displayTranslation = (translatedWord) => {
   parentDiv.replaceChild(newDiv, previousWord);
 };
 
+//split the word and then add pigLatin letters and order to join them
 const splitString = () => {
   str = value
     .split(" ")
@@ -31,6 +35,7 @@ const splitString = () => {
   return displayTranslation(str);
 };
 
+//pigLatin translation
 const pigLatin = (word) => {
   let vowels = ["a", "e", "i", "o", "u"];
   let finalWord = "";

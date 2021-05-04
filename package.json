@@ -13,11 +13,7 @@
     "javascripting": "javascripting",
     "functional-javascript": "functional-javascript"
   },
-  "author": "Clayton Berger",
-  "bugs": {
-    "url": "https://github.com/AustinCodingAcademy/JS211_PigLatinProject/issues"
-  },
-  "homepage": "https://github.com/AustinCodingAcademy/JS211_PigLatinProject#readme",
+  "author": "Ariel Holman",
   "dependencies": {
     "eslint": "^3.19.0",
     "functional-javascript-workshop": "^1.0.6",

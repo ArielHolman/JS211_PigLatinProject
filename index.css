@@ -3,18 +3,18 @@ body {
   overflow-y: hidden;
 }
 
-main{
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #92B5B6;
+  background-color: #92b5b6;
   height: 98.5vh;
   width: 100%;
 }
 
-h3{
-  font-family: 'Exo 2', sans-serif;
+h3 {
+  font-family: "Exo 2", sans-serif;
   font-size: 2.5rem;
   margin: 1%;
 }
@@ -39,7 +39,7 @@ h3{
   justify-content: center;
 }
 
-textarea{
+textarea {
   width: 17rem;
   height: 150px;
   padding: 12px 20px;
@@ -51,26 +51,26 @@ textarea{
   resize: none;
   text-align: center;
   margin: 1rem 0;
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
 }
 
-#pigTalk{
+#pigTalk {
   font-weight: bolder;
-  border-radius:90%;
+  border-radius: 90%;
   margin-left: 15rem;
   padding: 1rem;
   text-align: right;
-  font-family: 'Hachi Maru Pop', cursive;
+  font-family: "Hachi Maru Pop", cursive;
 }
 
-button{
-color: #ccc;
-font-size: 35px;
-border-radius: 10%;
-padding: 1rem;
-margin: 0 5vw;
-font-family: 'Exo 2', sans-serif;
-width: 10rem;
+button {
+  color: #ccc;
+  font-size: 35px;
+  border-radius: 10%;
+  padding: 1rem;
+  margin: 0 5vw;
+  font-family: "Exo 2", sans-serif;
+  width: 10rem;
 }
 
 .clearBtn {
